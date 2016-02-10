@@ -39,6 +39,10 @@ $(function() {
         $simcir.children().remove();
         $s.setupSimcir($simcir, JSON.parse(data) );
     };
+    var getCircuitData = function() {
+        return $s.controller(
+            $simcir.find('.simcir-workspace') ).text();
+    };
     var initial_load = $simcir[0].getAttribute('initial_load');
     if(initial_load == null) {
         setCircuitData('{"width":935, "height":550}');
@@ -46,4 +50,24 @@ $(function() {
     else {
         setCircuitData(initial_load);
     }
+    $('#complete').click(function() {
+        var correct = $simcir[0].getAttribute('correct');
+        if(correct == null) {
+            alert('Auto complete isn\'t present for this experiment');
+            return;
+        }
+        else {
+            setCircuitData(correct);
+        }
+    });
+    $('#verify').click(function() {
+        var correct = $simcir[0].getAttribute('correct');
+        if(correct == null) {
+            alert('Verification isn\'t present for this experiment');
+            return;
+        }
+        else {
+            // TODO: need to be implemented
+        }
+    });
 });

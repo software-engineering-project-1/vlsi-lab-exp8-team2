@@ -43,8 +43,8 @@
                     <div class="outer_experiment_box">
                         <section class="head">
                             <div class="left">
-                                <button>Verify</button>
-                                <button>Auto-complete</button>
+                                <button id="verify">Verify</button>
+                                <button id="complete">Auto-complete</button>
                             </div>
                             <div class="right">
                                 <select>
@@ -56,45 +56,7 @@
                                 <button>Simulate</button>
                             </div>
                         </section>
-                        <div id="experiment_space"
-                             initial_load='
-                                            {
-                                              "width":935,
-                                              "height":550,
-                                              "showToolbox":true,
-                                              "toolbox":[
-                                                {"type":"In"},
-                                                {"type":"Out"},
-                                                {"type":"RS-FF"},
-                                                {"type":"NOT"},
-                                                {"type":"OSC"}
-                                              ],
-                                              "devices":[
-                                              ],
-                                              "connectors":[
-                                              ]
-                                            }
-                             '
-                             correct='
-                                             {
-                                               "devices":[
-                                                {"type":"RS-FF","id":"dev0","x":144,"y":80,"label":"RS-FF"},
-                                                {"type":"RS-FF","id":"dev1","x":312,"y":80,"label":"RS-FF"},
-                                                {"type":"In","id":"dev2","x":232,"y":120,"label":"In"},
-                                                {"type":"Out","id":"dev3","x":424,"y":72,"label":"Out"},
-                                                {"type":"In","id":"dev4","x":48,"y":128,"label":"In"},
-                                                {"type":"In","id":"dev5","x":16,"y":72,"label":"In"}
-                                                ],
-                                                "connectors":[
-                                                {"from":"dev0.in0","to":"dev5.out0"},
-                                                {"from":"dev0.in1","to":"dev4.out0"},
-                                                {"from":"dev1.in0","to":"dev0.out0"},
-                                                {"from":"dev1.in1","to":"dev2.out0"},
-                                                {"from":"dev3.in0","to":"dev1.out0"}
-                                                ]
-                                             }
-                             '
-                        ></div>
+                        <div id="experiment_space"></div>
                     </div>
                 </div>
             </div>
@@ -114,6 +76,13 @@
 <script type="text/javascript" src="js/simcir/simcir.js"></script>
 <script type="text/javascript" src="js/simcir/simcir-library.js"></script>
 <script type="text/javascript" src="js/simcir/simcir-basicset.js"></script>
+<script>
+    var ele = $('#experiment_space')[0];
+    var initial_data = '{"width":935,"height":550,"showToolbox":true,"toolbox":[{"type":"In"},{"type":"Out"},{"type":"RS-FF"},{"type":"NOT"},{"type":"OSC"}],"devices":[],"connectors":[]}';
+    ele.setAttribute('initial_load', initial_data);
+    var correct = '{"width":935,"height":550,"showToolbox":true,"toolbox":[{"type":"In"},{"type":"Out"},{"type":"RS-FF"},{"type":"NOT"},{"type":"OSC"}],"devices":[{"type":"RS-FF","id":"dev0","x":144,"y":80,"label":"RS-FF"},{"type":"RS-FF","id":"dev1","x":312,"y":80,"label":"RS-FF"},{"type":"In","id":"dev2","x":232,"y":120,"label":"In"},{"type":"Out","id":"dev3","x":424,"y":72,"label":"Out"},{"type":"In","id":"dev4","x":48,"y":128,"label":"In"},{"type":"In","id":"dev5","x":16,"y":72,"label":"In"}],"connectors":[{"from":"dev0.in0","to":"dev5.out0"},{"from":"dev0.in1","to":"dev4.out0"},{"from":"dev1.in0","to":"dev0.out0"},{"from":"dev1.in1","to":"dev2.out0"},{"from":"dev3.in0","to":"dev1.out0"}]}';
+    ele.setAttribute('correct', correct);
+</script>
 <script type="text/javascript" src="js/simcir/vlab-integration.js"></script>
 </body>
 </html>
