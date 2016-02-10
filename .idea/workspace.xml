@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad629941-4090-4044-bcc5-c199db80375c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/blockactive.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/blockdefault.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/chromebg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/chromebg2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/color_tabs_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/color_tabs_right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/glowtab-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/media/glowtab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/Icon_simulator.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/Icon_theory.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/assignment.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/books.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/content_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/d_latch.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/eval.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/feedback.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/footer-curve.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/header-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/header_01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/header_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/1245599423.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/Columbs.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/VistaArrowIconsPreview2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/appletpic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/appletpic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/bdot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/blackdot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/blue-bullet.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/columbs7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/coulomb6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/default_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/dipole7thumbnail.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody2D.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody2D_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_s1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_s1_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_s2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_s2_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_s3.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ForcedVibBody_s3_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody2D.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody2D_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_s1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_s1_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_s2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_s2_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_s3.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/FreeVibBody_s3_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/MDOF.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/MDOF_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Pendulum.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Pendulum2D.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Pendulum2D_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Pendulum_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Pendulum_s1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Pendulum_s1_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/PhotoElectric.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/PhotoElectric_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ResponseSpecturm.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ResponseSpecturm_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ShakeTable.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/ShakeTable_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/calorimeter.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/calorimeter_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/dipoleMoment.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/dipoleMoment_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/dipoleMoment_liquid.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/dipoleMoment_liquid_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/millikan.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/millikan_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/opticalRot.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/opticalRot_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/phScale.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp/phScale_full.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/exp1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/f_s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/freevib1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/freevib1thumbnail.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image3.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image4.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image5.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image6.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image7.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/image_force.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/images_force2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/intro_image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/left-round.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/nav-bar-sep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/navbar-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/obj.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/pendulum1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/pendulum1thumbnail.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/people/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/people/pic1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/people/pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/people/pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/photoelectric.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/photoelectric.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/quest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/quest.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/right-round.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/title.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img01.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img03.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img08.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img082.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img09.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img092.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img102.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/img11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/index_05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/intro.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/manual.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/navshadow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/object.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/pos_edge_d.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/pro.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/procedure.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/quiz.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sim.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/assignment.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/books.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/feedback.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/intro.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/manual.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/object.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/objective.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/pro.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/procedure.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/quiz.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/sim.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/submenu_pics/theory.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/theory(1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/theory.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/flexnav.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/glowtabs/glowtabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/Copy of style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/__utm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/amo2009.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/js_constants.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/images/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/beethoven.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/ddtabmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/ddtabmenu/ddtabmenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+    </list>
+    <ignored path="se-project1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="se-project1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.144">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Shivam Khandelwal" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="57" />
+    <option name="y" value="24" />
+    <option name="width" value="1223" />
+    <option name="height" value="776" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se-project1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se-project1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se-project1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se-project1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se-project1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad629941-4090-4044-bcc5-c199db80375c" name="Default" comment="" />
+      <created>1456172577989</created>
+      <option name="number" value="Default" />
+      <updated>1456172577989</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="57" y="24" width="1223" height="776" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18166667" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.144">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
