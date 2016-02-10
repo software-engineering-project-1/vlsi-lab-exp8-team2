@@ -40,24 +40,62 @@
                 <div style="background-color:#e5eecc;border:solid 1px #c3c3c3;padding:5px;font-size:20px;text-align:center"> Experiment (Positive)</div>
                 <br />
                 <div style="font-size: 16px;padding:5px;padding-bottom:20px;">
-                    <div id="experiment_space" initial_load='
-                    {
-                          "width":935,
-                          "height":550,
-                          "showToolbox":true,
-                          "toolbox":[
-                            {"type":"In"},
-                            {"type":"Out"},
-                            {"type":"RS-FF"},
-                            {"type":"NOT"},
-                            {"type":"OSC"}
-                          ],
-                          "devices":[
-                          ],
-                          "connectors":[
-                          ]
-                        }
-                    '></div>
+                    <div class="outer_experiment_box">
+                        <section class="head">
+                            <div class="left">
+                                <button>Verify</button>
+                                <button>Auto-complete</button>
+                            </div>
+                            <div class="right">
+                                <select>
+                                    <option value="1">InputWave 1</option>
+                                    <option value="2">InputWave 2</option>
+                                    <option value="3">InputWave 3</option>
+                                    <option value="4">InputWave 4</option>
+                                </select>
+                                <button>Simulate</button>
+                            </div>
+                        </section>
+                        <div id="experiment_space"
+                             initial_load='
+                                            {
+                                              "width":935,
+                                              "height":550,
+                                              "showToolbox":true,
+                                              "toolbox":[
+                                                {"type":"In"},
+                                                {"type":"Out"},
+                                                {"type":"RS-FF"},
+                                                {"type":"NOT"},
+                                                {"type":"OSC"}
+                                              ],
+                                              "devices":[
+                                              ],
+                                              "connectors":[
+                                              ]
+                                            }
+                             '
+                             correct='
+                                             {
+                                               "devices":[
+                                                {"type":"RS-FF","id":"dev0","x":144,"y":80,"label":"RS-FF"},
+                                                {"type":"RS-FF","id":"dev1","x":312,"y":80,"label":"RS-FF"},
+                                                {"type":"In","id":"dev2","x":232,"y":120,"label":"In"},
+                                                {"type":"Out","id":"dev3","x":424,"y":72,"label":"Out"},
+                                                {"type":"In","id":"dev4","x":48,"y":128,"label":"In"},
+                                                {"type":"In","id":"dev5","x":16,"y":72,"label":"In"}
+                                                ],
+                                                "connectors":[
+                                                {"from":"dev0.in0","to":"dev5.out0"},
+                                                {"from":"dev0.in1","to":"dev4.out0"},
+                                                {"from":"dev1.in0","to":"dev0.out0"},
+                                                {"from":"dev1.in1","to":"dev2.out0"},
+                                                {"from":"dev3.in0","to":"dev1.out0"}
+                                                ]
+                                             }
+                             '
+                        ></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,9 +105,11 @@
     <div class="copyright">Copyright &copy; 2009-2016</div>
 </div>
 
+
 <!---- Adding external library at end, so the page renders quicker -->
 <link rel="stylesheet" type="text/css" href="css/simcir/simcir.css" />
 <link rel="stylesheet" type="text/css" href="css/simcir/simcir-basicset.css" />
+<link rel="stylesheet" type="text/css" href="css/simcir/vlab-integration.css" />
 <script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/simcir/simcir.js"></script>
 <script type="text/javascript" src="js/simcir/simcir-library.js"></script>

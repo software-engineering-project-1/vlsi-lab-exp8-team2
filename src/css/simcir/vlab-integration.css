@@ -1,0 +1,78 @@
+.outer_experiment_box {
+    /*background-color: black;*/
+}
+
+.outer_experiment_box .head {
+    width: 99.0%;
+    padding-top: 5px;
+    height: 25px;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 0px;
+    background: #eee;
+}
+
+.outer_experiment_box .head img {
+    width: 16px;
+    height: 16px;
+}
+
+.outer_experiment_box .head .left {
+    float: left;
+}
+
+.outer_experiment_box .head .right {
+    float: right;
+}
+
+.simcir-device-label {
+    /*fill: white;*/
+    /*font-weight: bold;*/
+}
+
+.simcir-toolbox .simcir-device-label {
+    /*fill: white;*/
+    /*font-weight: bold;*/
+}
+
+.simcir-device-body {
+    cursor: pointer;
+}
+
+.simcir-device, .simcir-device * {
+    cursor: pointer;
+}
+
+.simcir-workspace {
+    border: 2px solid black;
+}
+
+section button img {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: block;
+}
+
+section button {
+    font-size: 15px;
+    padding: 1.5px;
+    text-align: center;
+    align-items:center;
+    background-color: #888;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: bold;
+    /*-webkit-border-radius: 3px;*/
+    /*border-radius: 3px;*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+section button:hover {
+    background-color: #ffffff;
+    color: #888;
+    border-color: #888;
+}
