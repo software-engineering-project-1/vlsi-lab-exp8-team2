@@ -43,6 +43,99 @@ $(function() {
         return $s.controller(
             $simcir.find('.simcir-workspace') ).text();
     };
+    var componentsVerification = function(correct, current) {
+        temp_ = {};
+        for (device in correct) {
+            temp_device = correct[device];
+            if(temp_device.type in temp_) {
+                temp_[temp_device.type]['count'] += 1;
+            }
+            else {
+                temp_[temp_device.type] = {};
+                temp_[temp_device.type]['count'] = 1;
+            }
+        }
+
+        for (device in current) {
+            temp_device = current[device];
+            if(temp_device.type in temp_) {
+                temp_[temp_device.type]['count'] -= 1;
+                if(temp_[temp_device.type]['count'] < 0) {
+                    alert('You have used extra "' + temp_device.type + '" type componenet.');
+                    return false;
+                }
+            }
+            else {
+                alert('There isn\'t any need to use "' + temp_device.type + '" type component.');
+                return false;
+            }
+        }
+
+        for (device in temp_) {
+            if(temp_[device]['count'] > 0) {
+                alert('You need to add more "' + temp_device.type + '" type component.');
+                return false;
+            }
+        }
+
+        return true;
+    };
+    var connectionVerification = function(correct, current) {
+        //TODO: implementation needed
+        //temp_ = {};
+        //for (device in correct) {
+        //    temp_device = correct[device];
+        //    if(temp_device.type in temp_) {
+        //        temp_[temp_device.type]['count'] += 1;
+        //    }
+        //    else {
+        //        temp_[temp_device.type] = {};
+        //        temp_[temp_device.type]['count'] = 1;
+        //    }
+        //}
+        //
+        //for (device in current) {
+        //    temp_device = current[device];
+        //    if(temp_device.type in temp_) {
+        //        temp_[temp_device.type]['count'] -= 1;
+        //        if(temp_[temp_device.type]['count'] < 0) {
+        //            alert('You have used extra "' + temp_device.type + '" type componenet.');
+        //            return false;
+        //        }
+        //    }
+        //    else {
+        //        alert('There isn\'t any need to use "' + temp_device.type + '" type component.');
+        //        return false;
+        //    }
+        //}
+        //
+        //for (device in temp_) {
+        //    if(temp_[device]['count'] > 0) {
+        //        alert('You need to add more "' + temp_device.type + '" type component.');
+        //        return false;
+        //    }
+        //}
+        //
+        //return true;
+    };
+    var isCircuitComplete = function (correct) {
+        var current = getCircuitData();
+        current = JSON.parse(current);
+        //if(current.connectors.length > correct.connectors.length) {
+        //    alert('It seems like you have used extra wires than required.. :(');
+        //    return;
+        //}
+        //else if(current.connectors.length < correct.connectors.length) {
+        //    alert('It seems like you have not connected all components.. :(');
+        //    return;
+        //}
+        if(componentsVerification(correct.devices, current.devices)) {
+            return;
+        }
+        if(connectionVerification(correct.connectors, current.connectors)) {
+            return;
+        }
+    };
     var initial_load = $simcir[0].getAttribute('initial_load');
     if(initial_load == null) {
         setCircuitData('{"width":935, "height":550}');
@@ -67,7 +160,7 @@ $(function() {
             return;
         }
         else {
-            // TODO: need to be implemented
+            isCircuitComplete(JSON.parse(correct));
         }
     });
 });
