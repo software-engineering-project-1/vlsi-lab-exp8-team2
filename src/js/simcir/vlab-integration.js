@@ -81,42 +81,58 @@ $(function() {
         return true;
     };
     var connectionVerification = function(correct, current) {
-        //TODO: implementation needed
-        //temp_ = {};
-        //for (device in correct) {
-        //    temp_device = correct[device];
-        //    if(temp_device.type in temp_) {
-        //        temp_[temp_device.type]['count'] += 1;
-        //    }
-        //    else {
-        //        temp_[temp_device.type] = {};
-        //        temp_[temp_device.type]['count'] = 1;
-        //    }
-        //}
-        //
-        //for (device in current) {
-        //    temp_device = current[device];
-        //    if(temp_device.type in temp_) {
-        //        temp_[temp_device.type]['count'] -= 1;
-        //        if(temp_[temp_device.type]['count'] < 0) {
-        //            alert('You have used extra "' + temp_device.type + '" type componenet.');
-        //            return false;
-        //        }
-        //    }
-        //    else {
-        //        alert('There isn\'t any need to use "' + temp_device.type + '" type component.');
-        //        return false;
-        //    }
-        //}
-        //
-        //for (device in temp_) {
-        //    if(temp_[device]['count'] > 0) {
-        //        alert('You need to add more "' + temp_device.type + '" type component.');
-        //        return false;
-        //    }
-        //}
-        //
-        //return true;
+        connection_count = {};
+        id_to_component_mapping = {};
+        for (x in correct.devices) {
+            if(correct.devices[x].type in connection_count) {
+                // ignore!
+            }
+            else {
+                connection_count[correct.devices[x].type] = {}
+            }
+            curr_top_ = connection_count[correct.devices[x].type];
+            id_to_component_mapping[correct.devices[x].id] = correct.devices[x].type;
+            for (y in correct.devices) {
+                if(correct.devices[y].type in curr_top_) {
+                    // ignore!
+                }
+                else {
+                    curr_top_[correct.devices[y].type] = {}
+                    curr_top_[correct.devices[y].type]['count'] = 0;
+                }
+            }
+        }
+
+        for (connection in correct.connectors) {
+            present = correct.connectors[connection];
+            from_ = present.from.split('.')[0];
+            to_ = present.to.split('.')[0];
+            connection_count[id_to_component_mapping[from_]][id_to_component_mapping[to_]]['count'] += 1;
+        }
+
+        for (connection in current.connectors) {
+            present = current.connectors[connection];
+            from_ = present.from.split('.')[0];
+            to_ = present.to.split('.')[0];
+            connection_count[id_to_component_mapping[from_]][id_to_component_mapping[to_]]['count'] -= 1;
+        }
+
+        for (x in connection_count) {
+            pre_ = connection_count[x];
+            for (y in pre_) {
+                c = pre_[y]['count'];
+                if(c>0) {
+                    alert('There are missing connection between ' + x + ' and ' + y + ' type componenet.');
+                    return false;
+                }
+                else if(c<0) {
+                    alert('There are unnecessary connection between ' + x + ' and ' + y + ' type componenet.')
+                    return false;
+                }
+            }
+        }
+
+        return true;
     };
     var isCircuitComplete = function (correct) {
         var current = getCircuitData();
@@ -130,11 +146,11 @@ $(function() {
         //    return;
         //}
         if(componentsVerification(correct.devices, current.devices)) {
-            return;
+            if(connectionVerification(correct, current)) {
+                return true;
+            }
         }
-        if(connectionVerification(correct.connectors, current.connectors)) {
-            return;
-        }
+        return false;
     };
     var initial_load = $simcir[0].getAttribute('initial_load');
     if(initial_load == null) {
@@ -160,7 +176,9 @@ $(function() {
             return;
         }
         else {
-            isCircuitComplete(JSON.parse(correct));
+            if(isCircuitComplete(JSON.parse(correct))) {
+                alert('Bravo! You have made correct circuit.');
+            }
         }
     });
 });
