@@ -81,8 +81,9 @@ $(function() {
         return true;
     };
     var connectionVerification = function(correct, current) {
-        connection_count = {};
-        id_to_component_mapping = {};
+        var connection_count = {};
+        var id_to_component_mapping = {};
+        var id_to_component_mapping_2 = {};
         for (x in correct.devices) {
             if(correct.devices[x].type in connection_count) {
                 // ignore!
@@ -103,6 +104,11 @@ $(function() {
             }
         }
 
+        for (x in current.devices) {
+            curr_top_ = connection_count[current.devices[x].type];
+            id_to_component_mapping_2[current.devices[x].id] = current.devices[x].type;
+        }
+
         for (connection in correct.connectors) {
             present = correct.connectors[connection];
             from_ = present.from.split('.')[0];
@@ -114,7 +120,7 @@ $(function() {
             present = current.connectors[connection];
             from_ = present.from.split('.')[0];
             to_ = present.to.split('.')[0];
-            connection_count[id_to_component_mapping[from_]][id_to_component_mapping[to_]]['count'] -= 1;
+            connection_count[id_to_component_mapping_2[from_]][id_to_component_mapping_2[to_]]['count'] -= 1;
         }
 
         for (x in connection_count) {
