@@ -187,4 +187,37 @@ $(function() {
             }
         }
     });
+    $.each(simOptions, function (key, value) {
+        $('#simOptions').append(
+            $("<option></option>")
+                .attr("value", key)
+                .attr("file_path", value.file)
+                .attr("url", value.url)
+                .text(value.display)
+        );
+    });
+    function OpenInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
+    $('#simButton').click(function() {
+        var correct = $simcir[0].getAttribute('correct');
+        if(correct == null) {
+        }
+        else {
+            if(!isCircuitComplete(JSON.parse(correct))) {
+                alert('Please correct your circuit first.. :(');
+                return;
+            }
+            out = $('#simOutput')[0].value;
+            curr_ = $('#simOptions')[0].value;
+            if(out=="web") {
+                OpenInNewTab(simOptions[curr_]['url']);
+            } else {
+                OpenInNewTab(simOptions[curr_]['file']);
+            }
+        }
+
+
+    });
 });
