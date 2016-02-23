@@ -1,0 +1,16 @@
+Release Notes for VLSI lab
+
+1.Commit id of the Source : 758e9206157278613134c1da74913f90fd01839b
+2.Version Number of the Lab : v1
+3.Details of new features added  :
+  - Feature addition #1
+    - Feature : Automatic complete (help)
+    - Description : When the student is unable to complete the experiment, he can use our autocomplete button to fill up the digram automatically.
+    - Test Case links : No test case needed
+  - Feature addition #2
+    - Feature : Web based simulation
+    - Description : Earlier the GTKwave was compulsory needed, not with web based simulate, students can simulate online only.
+    - Test Case links : No test case needed
+4.Defect link of resolved defects : All the test cases failing earlier have been resolved, the test case file is available in the git repo
+5.Tests conducted with results : (manually conducted, as all test cases needed clicks at various places)
+6.Environment Settings : Checked for UBUNTU, Windows, Mac. Chrome and Firefox.
