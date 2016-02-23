@@ -26,7 +26,7 @@
             <div id="contentBox" style="padding:0px;padding-left:40px;padding-right:40px;min-height:500px;">
                 <div id="ddtabs2" class="glowingtabs">
                     <ul>
-                        <li><a href="http://cse14-iiith.vlabs.ac.in/"><span><center><img src="images/submenu_pics/intro.jpeg" BORDER=0 width=58px height=48px><br>Introduction</center></span></a></li>
+                        <li><a href="index.html"><span><center><img src="images/submenu_pics/intro.jpeg" BORDER=0 width=58px height=48px><br>Introduction</center></span></a></li>
                         <li><a href="objective.html"><span><center><img src="images/submenu_pics/object.jpeg" BORDER=0 width=58px height=48px><br>Objective</center></span></a></li>
                         <li><a href="manual.html"><span><center><img src="images/submenu_pics/manual.jpeg" BORDER=0 width=58px height=48px><br>Manual</center></span></a></li>
                         <li><a href="procedure.html"><span><center><img src="images/submenu_pics/pro.jpg" BORDER=0 width=58px height=48px><br>Procedure</center></span></a></li>
@@ -37,15 +37,17 @@
                         <li><a href="feedback.html"><span><center><img src="images/submenu_pics/feedback.jpg" BORDER=0 width=58px height=48px><br>Feedback</center></span></a></li>
                     </ul>
                 </div>
-                <div style="background-color:#e5eecc;border:solid 1px #c3c3c3;padding:5px;font-size:20px;text-align:center"> Theory</div>
+                <div style="background-color:#e5eecc;border:solid 1px #c3c3c3;padding:5px;font-size:20px;text-align:center"> Experiment (Create JSON)</div>
                 <br />
                 <div style="font-size: 16px;padding:5px;padding-bottom:20px;">
-                    <p>
-                        <center><img width=100% src="files/theoryImages/1.png"></center><br>
-                        <center><img width=100% src="files/theoryImages/2.png"></center><br>
-                        <center><img width=100% src="files/theoryImages/3.png"></center><br>
-                        <center><img width=100% src="files/theoryImages/4.png"></center><br>
-                    </p>
+                    <div class="outer_experiment_box">
+                        <div id="mySimcir"></div>
+                        <div>
+                            <button id="getDataBtn">v get data v</button>
+                            <button id="setDataBtn">^ set data ^</button>
+                        </div>
+                        <textarea id="dataArea" style="width:600px; height:200px;"></textarea>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,5 +56,39 @@
 <div style="position: relative; margin:auto; width: 1024px; background-color:#0e8de0;padding-bottom:8px;"><img src="images/footer-curve.jpg" width="1024" height="31" alt="">
     <div class="copyright">Copyright &copy; 2009-2016</div>
 </div>
+
+
+<!---- Adding external library at end, so the page renders quicker -->
+<link rel="stylesheet" type="text/css" href="css/simcir/simcir.css" />
+<link rel="stylesheet" type="text/css" href="css/simcir/simcir-basicset.css" />
+<link rel="stylesheet" type="text/css" href="css/simcir/vlab-integration.css" />
+<script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/simcir/simcir.js"></script>
+<script type="text/javascript" src="js/simcir/simcir-library.js"></script>
+<script type="text/javascript" src="js/simcir/simcir-basicset.js"></script>
+<script>
+    $(function() {
+        var $s = simcir;
+        var $simcir = $('#mySimcir');
+        var getCircuitData = function() {
+            return $s.controller(
+                    $simcir.find('.simcir-workspace') ).text();
+        };
+        var setCircuitData = function(data) {
+            $simcir.children().remove();
+            $s.setupSimcir($simcir, JSON.parse(data) );
+        };
+        // button click events
+        $('#getDataBtn').click(function() {
+            $('#dataArea').val(getCircuitData() );
+        });
+        $('#setDataBtn').click(function() {
+            setCircuitData($('#dataArea').val() );
+        });
+        // load default (just specifies circuit size).
+        setCircuitData('{"width":935,"height":550}');
+    });
+</script>
+<!--<script type="text/javascript" src="js/simcir/vlab-integration.js"></script>-->
 </body>
 </html>
