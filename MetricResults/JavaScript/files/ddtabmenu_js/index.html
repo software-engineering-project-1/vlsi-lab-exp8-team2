@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Plato - ddtabmenu.js</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="../../assets/css/vendor/morris.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/bootstrap.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/font-awesome.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/codemirror.css" rel="stylesheet">
+  <link href="../../assets/css/plato.css" rel="stylesheet">
+  <link href="../../assets/css/plato-file.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="http://github.com/es-analysis/plato">Plato on Github</a>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="../../index.html">Report Home</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>ddtabmenu.js</h1>
+  </div>
+</div>
+
+<div class="container aggregate-stats">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"  data-container="body"></i></a></h2>
+      <p class="stat">70.69</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h2>
+      <p class="stat">91</p>
+    </div>
+  </div>
+  <div class="row historical">
+    <div class="col-md-6">
+      <p id="chart_historical_maint" class="chart"></p>
+    </div>
+    <div class="col-md-6">
+      <p id="chart_historical_sloc" class="chart"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty" data-container="body"></i></a></h2>
+      <p class="stat">50.62</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs" data-container="body"></i></a></h2>
+      <p class="stat">1.33</p>
+    </div>
+  </div>
+</div>
+
+<div class="container charts">
+  <div class="row">
+    <h2 class="header">Function weight</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="chart-header">By Complexity <a href="http://en.wikipedia.org/wiki/Cyclomatic_complexity"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="This metric counts the number of distinct paths through a block of code. Lower values are better." data-original-title="Cyclomatic Complexity" data-container="body"></i></a></h3>
+      <div id="fn-by-complexity" class="stat"></div>
+    </div>
+    <div class="col-md-6">
+      <h3 class="chart-header">By SLOC  <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h3>
+      <div id="fn-by-sloc" class="stat"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <textarea id="file-source" class="col-md-12">//DD Tab Menu- Script rewritten April 27th, 07: http://www.dynamicdrive.com
+//**Updated Feb 23rd, 08): Adds ability for menu to revert back to default selected tab when mouse moves out of menu
+
+//Only 2 configuration variables below:
+
+var ddtabmenu={
+	disabletablinks: false, //Disable hyperlinks in 1st level tabs with sub contents (true or false)?
+	snap2original: [true, 300], //Should tab revert back to default selected when mouse moves out of menu? ([true/false, delay_millisec]
+
+	currentpageurl: window.location.href.replace(&quot;http://&quot;+window.location.hostname, &quot;&quot;).replace(/^\//, &quot;&quot;), //get current page url (minus hostname, ie: http://www.dynamicdrive.com/)
+
+definemenu:function(tabid, dselected){
+	this[tabid+&quot;-menuitems&quot;]=null
+	this[tabid+&quot;-dselected&quot;]=-1
+	this.addEvent(window, function(){ddtabmenu.init(tabid, dselected)}, &quot;load&quot;)
+},
+
+showsubmenu:function(tabid, targetitem){
+	var menuitems=this[tabid+&quot;-menuitems&quot;]
+	this.clearrevert2default(tabid)
+ for (i=0; i&lt;menuitems.length; i++){
+		menuitems[i].className=&quot;&quot;
+		if (typeof menuitems[i].hasSubContent!=&quot;undefined&quot;)
+			document.getElementById(menuitems[i].getAttribute(&quot;rel&quot;)).style.display=&quot;none&quot;
+	}
+	targetitem.className=&quot;current&quot;
+	if (typeof targetitem.hasSubContent!=&quot;undefined&quot;)
+		document.getElementById(targetitem.getAttribute(&quot;rel&quot;)).style.display=&quot;block&quot;
+},
+
+isSelected:function(menuurl){
+	var menuurl=menuurl.replace(&quot;http://&quot;+menuurl.hostname, &quot;&quot;).replace(/^\//, &quot;&quot;)
+	return (ddtabmenu.currentpageurl==menuurl)
+},
+
+isContained:function(m, e){
+	var e=window.event || e
+	var c=e.relatedTarget || ((e.type==&quot;mouseover&quot;)? e.fromElement : e.toElement)
+	while (c &amp;&amp; c!=m)try {c=c.parentNode} catch(e){c=m}
+	if (c==m)
+		return true
+	else
+		return false
+},
+
+revert2default:function(outobj, tabid, e){
+	if (!ddtabmenu.isContained(outobj, tabid, e)){
+		window[&quot;hidetimer_&quot;+tabid]=setTimeout(function(){
+			ddtabmenu.showsubmenu(tabid, ddtabmenu[tabid+&quot;-dselected&quot;])
+		}, ddtabmenu.snap2original[1])
+	}
+},
+
+clearrevert2default:function(tabid){
+ if (typeof window[&quot;hidetimer_&quot;+tabid]!=&quot;undefined&quot;)
+		clearTimeout(window[&quot;hidetimer_&quot;+tabid])
+},
+
+addEvent:function(target, functionref, tasktype){ //assign a function to execute to an event handler (ie: onunload)
+	var tasktype=(window.addEventListener)? tasktype : &quot;on&quot;+tasktype
+	if (target.addEventListener)
+		target.addEventListener(tasktype, functionref, false)
+	else if (target.attachEvent)
+		target.attachEvent(tasktype, functionref)
+},
+
+init:function(tabid, dselected){
+	var menuitems=document.getElementById(tabid).getElementsByTagName(&quot;a&quot;)
+	this[tabid+&quot;-menuitems&quot;]=menuitems
+	for (var x=0; x&lt;menuitems.length; x++){
+		if (menuitems[x].getAttribute(&quot;rel&quot;)){
+			this[tabid+&quot;-menuitems&quot;][x].hasSubContent=true
+			if (ddtabmenu.disabletablinks)
+				menuitems[x].onclick=function(){return false}
+			if (ddtabmenu.snap2original[0]==true){
+				var submenu=document.getElementById(menuitems[x].getAttribute(&quot;rel&quot;))
+				menuitems[x].onmouseout=function(e){ddtabmenu.revert2default(submenu, tabid, e)}
+				submenu.onmouseover=function(){ddtabmenu.clearrevert2default(tabid)}
+				submenu.onmouseout=function(e){ddtabmenu.revert2default(this, tabid, e)}
+			}
+		}
+		else //for items without a submenu, add onMouseout effect
+			menuitems[x].onmouseout=function(e){this.className=&quot;&quot;; if (ddtabmenu.snap2original[0]==true) ddtabmenu.revert2default(this, tabid, e)}
+		menuitems[x].onmouseover=function(){ddtabmenu.showsubmenu(tabid, this)}
+		if (dselected==&quot;auto&quot; &amp;&amp; typeof setalready==&quot;undefined&quot; &amp;&amp; this.isSelected(menuitems[x].href)){
+			ddtabmenu.showsubmenu(tabid, menuitems[x])
+			this[tabid+&quot;-dselected&quot;]=menuitems[x]
+			var setalready=true
+		}
+		else if (parseInt(dselected)==x){
+			ddtabmenu.showsubmenu(tabid, menuitems[x])
+			this[tabid+&quot;-dselected&quot;]=menuitems[x]
+		}
+	}
+}
+}</textarea>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>.</p>
+  </div>
+</footer>
+
+<script type="text/html" id="complexity-popover-template">
+  <div class="complexity-notice">
+    Complexity : {{ complexity.cyclomatic }} <br>
+    Length : {{ complexity.halstead.length }} <br>
+    Difficulty : {{ complexity.halstead.difficulty.toFixed(2) }} <br>
+    Est # bugs : {{ complexity.halstead.bugs.toFixed(2) }}<br>
+  </div>
+</script>
+
+<script type="text/javascript" src="../../assets/scripts/bundles/core-bundle.js"></script>
+<script type="text/javascript" src="../../assets/scripts/bundles/codemirror.js"></script>
+<script type="text/javascript" src="../../assets/scripts/codemirror.markpopovertext.js"></script>
+<script type="text/javascript" src="report.js"></script>
+<script type="text/javascript" src="report.history.js"></script>
+<script type="text/javascript" src="../../assets/scripts/plato-file.js"></script>
+</body>
+</html>
