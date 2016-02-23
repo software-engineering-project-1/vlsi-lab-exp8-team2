@@ -11,7 +11,7 @@ Usage
 - Clone the code in your system using clone command `git clone git@github.com:software-engineering-project-1/vlsi-lab-exp8-team2.git`
 - Move your current directory to the `src` folder inside.
 - Run the code using SimpleHTTPServer (python) or PHPServer.
-
+- (alternatively use nginx pointing hostname to the src/ folder
 
 ----------------------
 
